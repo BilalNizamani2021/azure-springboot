@@ -12,6 +12,9 @@ import java.util.Map;
 public class DemoController {
     @GetMapping
     public ResponseEntity<?> getDemoObject(){
-        return ResponseEntity.ok(Map.of("name", "bilal"));
+        return ResponseEntity.ok(Map.of(
+                "name", "bilal",
+                "email", "bilal.nizamani@royalcyber.com"
+        ));
     }
 }
